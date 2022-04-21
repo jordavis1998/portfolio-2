@@ -1,16 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import LoginApp from './LoginApp';
+import React, {useCallback, useState} from "react"
+import { StyleSheet, View, Text } from "react-native"
 
-export default function App() {
-  return (
+export default function LogoutApp() {
+    // let [loggedOut, setLoggedOut] = useState(false)
+    return (<>
     <View style={styles.container}>
-      <LoginApp/>
-      <StatusBar style='auto'/>
+      <Text>You have successfully logged out!</Text>
     </View>
-  )
+    </>) 
 }
-
 
 const styles = StyleSheet.create({
   container: {
