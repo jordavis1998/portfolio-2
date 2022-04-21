@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Image from './greeting.jpg'
 import LoginApp from './LoginApp';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <img src={Image}></img>
+      <br></br>
       <LoginApp/>
       <StatusBar style='auto'/>
     </View>

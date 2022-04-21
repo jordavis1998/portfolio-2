@@ -2,7 +2,7 @@ import React, {useCallback, useState} from "react"
 import { StyleSheet, View, Text } from "react-native"
 
 export default function LogoutApp() {
-    // let [loggedOut, setLoggedOut] = useState(false)
+    let [loggedOut, setLoggedOut] = useState(false)
     return (<>
     <View style={styles.container}>
       <Text>You have successfully logged out!</Text>
